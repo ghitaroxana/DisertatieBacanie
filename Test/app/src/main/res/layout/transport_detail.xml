@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/transportDetailsTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:clickable="false"
+        android:gravity="center"
+        android:onClick="onClickDateFrom"
+        android:text="Detalii transport"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="30dp" />
+    <View
+        android:id="@+id/horizontalLine"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/transportDetailsTV"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/userFullNameTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="left|bottom"
+        android:text="Detalii utilizator"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/horizontalLine"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/userFullNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:hint="Detalii utilizator"
+        android:minHeight="@dimen/abc_text_size_display_2_material"
+        android:password="false"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/background_light"
+        android:elegantTextHeight="true"
+        android:layout_below="@+id/userFullNameTV"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/addressTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="left|bottom"
+        android:text="Adresă de livrare"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/userFullNameEV"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/addressET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:hint="Adresă de livrare"
+        android:minHeight="@dimen/abc_text_size_display_2_material"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/addressTV"
+        android:layout_alignParentStart="true"
+        android:lines="3" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/dateTV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:clickable="true"
+            android:gravity="left|bottom"
+            android:text="Dată livrare"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/hourTV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:clickable="true"
+            android:gravity="left|bottom"
+            android:text="Interval orar"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/dateBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@android:color/darker_gray"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/background_light"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:id="@+id/hourET"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@android:color/darker_gray"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/totalOrderTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/line"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/totalOrderTxt"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/subTotalTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_alignParentLeft="true"
+            android:text="@string/subtotal"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/subTotalPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/subTotalTV"
+            android:layout_gravity="right"
+            android:text="@string/RON"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/discountTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subTotalTV"
+            android:layout_alignParentLeft="true"
+            android:text="@string/discount"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/discountPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subTotalPriceTV"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:text="@string/RON"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/transportTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/transport"
+            android:layout_below="@+id/discountTV"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/transportPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_below="@+id/discountPriceTV"
+            android:text="10 RON"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/totalTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/totalOrder"
+            android:layout_below="@+id/transportPriceTV"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff14ff7e"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/totalPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_below="@+id/transportTV"
+            android:text="@string/RON"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff14ff7e"
+            android:textSize="25sp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:background="@android:color/darker_gray"
+        android:text="COMANDĂ"
+        android:textSize="25sp"
+        android:textColor="@android:color/background_light"
+        android:drawableLeft="@drawable/rsz_ebacania" />
+
+</LinearLayout>

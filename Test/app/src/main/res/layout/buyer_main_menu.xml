@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/vegetables_button"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="16.6"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:drawableLeft="@drawable/ic_rosie"
+        android:text="@string/vegetables" />
+
+    <Button
+        android:id="@+id/fruits_button"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="16.6"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/vegetables_button"
+        android:drawableLeft="@drawable/ic_capsuna"
+        android:text="@string/fruits" />
+
+    <Button
+        android:id="@+id/meat_button"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="16.6"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fruits_button"
+        android:drawableLeft="@drawable/ic_porc"
+        android:text="@string/meat" />
+    <Button
+        android:id="@+id/eggs_button"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="16.6"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/meat_button"
+        android:drawableLeft="@drawable/ic_gaina"
+        android:text="@string/eggs" />
+    <Button
+        android:id="@+id/milk_button"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="16.6"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/meat_button"
+        android:drawableLeft="@drawable/cheese32"
+        android:text="@string/milk" />
+    <Button
+        android:id="@+id/bread_button"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="16.6"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/milk_button"
+        android:drawableLeft="@drawable/ic_grau"
+        android:text="@string/bread" />
+    <Button
+        android:id="@+id/others_button"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="16.6"
+        android:drawableLeft="@drawable/ic_floare"
+        android:text="@string/others"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+</LinearLayout>
+<!-- From: file:/R:/Disertatie/proiect%20bun/Test/app/src/main/res/layout/buyer_main_menu.xml -->

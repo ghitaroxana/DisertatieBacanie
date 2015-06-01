@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/orderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/checkOutOrder"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp" />
+     <ListView
+        android:id="@+id/orderListLV"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:focusable="false"
+        android:layout_below="@+id/orderTV" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/totalOrderTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/line"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/totalOrderTxt"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/subTotalTV"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/subTotalTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/discountTV"
+            android:layout_alignParentLeft="true"
+            android:text="@string/subtotal"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/subTotalPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/discountPriceTV"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/subTotalTV"
+            android:layout_gravity="right"
+            android:text="@string/RON"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/discountTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/transportTV"
+            android:layout_alignParentLeft="true"
+            android:text="@string/discount"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/discountPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/transportPriceTV"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:text="@string/RON"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/transportTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/totalTV"
+            android:layout_alignParentLeft="true"
+            android:text="@string/transport"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/transportPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/totalPriceTV"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:text="10 RON"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/totalTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnContinue"
+            android:layout_alignParentLeft="true"
+            android:text="@string/totalOrder"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff14ff7e"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/totalPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnContinue"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:text="@string/RON"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff14ff7e"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@android:color/darker_gray"
+            android:text="@string/next"
+            android:textColor="@android:color/background_light"></Button>
+    </RelativeLayout>
+</LinearLayout>

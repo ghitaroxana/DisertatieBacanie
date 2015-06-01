@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.roxanagh.test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+
+    <permission
+        android:name=".permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name=".permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/rsz_ebacania"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.roxanagh.test.SplashScreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.roxanagh.test.LoginActivity"
+            android:label="@string/login" />
+        <activity android:name="com.example.roxanagh.test.MainMenu" />
+        <activity android:name="com.example.roxanagh.test.SignUpActivity" />
+        <activity
+            android:name="com.example.roxanagh.test.BuyerMainMenu"
+            android:label="@string/products" />
+        <activity
+            android:name="com.example.roxanagh.test.ProducerMainMenu"
+            android:label="@string/products" />
+        <activity
+            android:name="com.example.roxanagh.test.ProductListActivity"
+            android:label="@string/products" />
+        <activity
+            android:name="com.example.roxanagh.test.ShoppingCartActivity"
+            android:label="@string/shopping_cart"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.example.roxanagh.test.CheckOutOrderActivity"
+            android:label="@string/checkOutOrder" />
+        <activity
+            android:name="com.example.roxanagh.test.AddNewProduct"
+            android:label="@string/addNewProduct" />
+        <activity
+            android:name="com.example.roxanagh.test.ShoppingCartTransportActivity"
+            android:label="@string/transportDetails" />
+        <activity
+            android:name="com.example.roxanagh.test.CategorySettings"
+            android:theme="@android:style/Theme.Dialog" />
+    </application>
+
+</manifest>

@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">eBăcănie</string>
+    <string name="login">Autentificare</string>
+    <string name="products">Produse</string>
+    <string name="productName">Produs</string>
+    <string name="productPrice">Preț</string>
+    <string name="locality">Localitate</string>
+    <string name="county">Județ</string>
+    <string name="userDetails">Detalii utilizator</string>
+    <string name="phoneNumber">Telefon</string>
+    <string name="per">/per</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Setări</string>
+    <string name="logout">Deconectare</string>
+    <string name="last_name">Nume</string>
+    <string name="first_name">Prenume</string>
+    <string name="list_products">Listă produse</string>
+    <string name="list_notices">Listă anunțuri</string>
+    <string name="favorites">Favorite</string>
+    <string name="category">Categorii</string>
+    <string name="my_account">Contul meu</string>
+    <string name="search">Căutare</string>
+    <string name="exit">Ieșire</string>
+    <string name="shopping_cart">Coș de cumpărături</string>
+    <string name="checkOutOrder">Comandă eBăcănie</string>
+    <string name="addNewProduct">Adăugați un anunț nou</string>
+    <string name="transportDetails">Detalii transport</string>
+    <string name="addNotice">Adăugați anunțul</string>
+    <string name="totalOrderTxt">Sumar comandă eBăcănie</string>
+    <string name="total">Total</string>
+    <string name="totalOrder">Total comandă</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="RON">0 RON</string>
+    <string name="transport">Livrare</string>
+    <string name="discount">Reducere</string>
+    <string name="quantity">Cantitate</string>
+    <string name="add6photos">Puteți adăuga până la 6 poze.</string>
+    <string name="product_description">Descriere produs</string>
+    <string name="date_from">De la:</string>
+    <string name="date_to">Pana la:</string>
+
+    <!--hints-->
+    <string name="hint_password">Parolă</string>
+    <string name="hint_username">Utilizator</string>
+    <string name="hint_last_name">Nume</string>
+    <string name="hint_first_name">Prenume</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Telefon</string>
+    <string name="hint_county">Județ</string>
+    <string name="hint_category">Categorie</string>
+    <string name="hint_locality">Localitate</string>
+    <string name="hint_userRole">Tip utilizator</string>
+
+    <!--Buttons-->
+    <string name="sign_in">Autentificare</string>
+    <string name="sign_up">Înregistrare</string>
+    <string name="save">Salvează</string>
+    <string name="next">Continuă</string>
+    <string name="cancel">Renunță</string>
+    <string name="vegetables">LEGUME</string>
+    <string name="fruits">FRUCTE</string>
+    <string name="meat">CARNE</string>
+    <string name="eggs">OUĂ</string>
+    <string name="milk">LACTATE</string>
+    <string name="bread">PANIFICAȚIE</string>
+    <string name="others">ALTELE</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>

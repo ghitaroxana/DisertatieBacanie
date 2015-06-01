@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/search_producer"
+        android:icon="@drawable/ic_action_search"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/search" />
+    <item
+        android:id="@+id/list_producer"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:title="@string/list_notices" />
+    <item
+        android:id="@+id/category_producer"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/category">
+    </item>
+    <item
+        android:id="@+id/account_producer"
+        android:orderInCategory="400"
+        android:showAsAction="never"
+        android:title="@string/my_account" />
+    <item
+        android:id="@+id/logout_icon_producer"
+        android:orderInCategory="500"
+        android:showAsAction="never"
+        android:title="@string/logout" />
+</menu><!-- From: file:/R:/Disertatie/proiect%20bun/Test/app/src/main/res/menu/producer_menu.xml -->

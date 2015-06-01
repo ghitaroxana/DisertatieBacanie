@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/shopping_cart"
+        android:actionLayout="@layout/badge_layout"
+        android:icon="@drawable/ic_cart_empty"
+        android:orderInCategory="150"
+        android:showAsAction="always"
+        android:title="@string/shopping_cart" />
+
+    <item
+        android:id="@+id/search_buyer"
+        android:icon="@drawable/ic_action_search"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/search" />
+    <item
+        android:id="@+id/list_buyer"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:title="@string/list_products" />
+    <item
+        android:id="@+id/favorites_buyer"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/favorites" />
+    <item
+        android:id="@+id/account_buyer"
+        android:orderInCategory="400"
+        android:showAsAction="never"
+        android:title="@string/my_account" />
+    <item
+        android:id="@+id/logout_icon_buyer"
+        android:orderInCategory="500"
+        android:showAsAction="never"
+        android:title="@string/logout" />
+</menu>
+

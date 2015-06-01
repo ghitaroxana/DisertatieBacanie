@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+    <ImageView
+        android:id="@+id/prod_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:maxHeight="120dp"
+        android:maxWidth="150dp"
+        android:src="@drawable/bio1"
+        android:layout_alignBottom="@+id/numberPicker" />
+
+    <TextView
+        android:id="@+id/prod_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/productName"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/orderLine"
+        android:layout_toEndOf="@+id/prod_icon" />
+
+    <TextView
+        android:id="@+id/orderPriceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prod_name"
+        android:text="@string/productPrice"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignStart="@+id/valuePriceTV" />
+
+    <TextView
+        android:id="@+id/unitPriceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/per"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignEnd="@+id/valuePriceTV"
+        android:layout_below="@+id/prod_name"
+        android:layout_toStartOf="@+id/orderLine" />
+        android:layout_toEndOf="@+id/orderPriceTV" />
+
+    <TextView
+        android:id="@+id/valuePriceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:text="@string/RON"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/unitPriceTV"
+        android:layout_toStartOf="@+id/orderLine" />
+
+    <View
+        android:id="@+id/orderLine"
+        android:layout_width="2dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/quantityET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quantity"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/orderTotalTV" />
+
+    <TextView
+        android:id="@+id/orderTotalTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff14ff7e"
+        android:layout_above="@+id/valueOrderTotalTV"
+        android:layout_toStartOf="@+id/numberPicker" />
+
+    <TextView
+        android:id="@+id/valueOrderTotalTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RON"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff14ff7e"
+        android:textSize="20sp"
+        android:layout_marginRight="15dp"
+        android:layout_alignBottom="@+id/numberPicker"
+        android:layout_alignStart="@+id/orderTotalTV" />
+
+
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="35dp"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

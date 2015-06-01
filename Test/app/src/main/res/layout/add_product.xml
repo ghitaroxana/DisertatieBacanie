@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/add_photoTV"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/add6photos"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/apptheme_primary"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/add_photoIV"
+        android:layout_width="291dp"
+        android:layout_height="134dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:adjustViewBounds="false"
+        android:maxHeight="150dp"
+        android:maxWidth="500dp"
+        android:src="@drawable/ic_action_photo" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/full_image">
+
+        <LinearLayout
+            android:id="@+id/add_mygallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/full_image"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/full_item_nameET"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_below="@+id/add_mygallery"
+                android:editable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/productName" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/fullPriceET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:editable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/productPrice" />
+
+                <Spinner
+                    android:id="@+id/per_combo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="0.5"
+                    android:hint="@string/per" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/add_comboCategory"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/fullPriceET"
+                android:hint="@string/hint_category" />
+
+            <EditText
+                android:id="@+id/add_full_item_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add_comboCategory"
+                android:editable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/product_description"
+                android:maxLines="5"
+                android:minLines="1" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/dateFromTV"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClickDateFrom"
+                    android:text="@string/date_from"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/dateToTV"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClickDateTo"
+                    android:text="@string/date_to"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/add_comboCounty"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/fullDateFromToTV"
+                android:layout_marginTop="15dp"
+                android:hint="@string/hint_county" />
+
+            <Spinner
+                android:id="@+id/add_comboLocality"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/add_comboCounty"
+                android:layout_marginTop="15dp"
+                android:hint="@string/hint_locality" />
+
+
+            <EditText
+                android:id="@+id/userDetailsTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add_comboLocality"
+                android:editable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/userDetails" />
+
+            <EditText
+                android:id="@+id/phoneNumberTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userDetailsTV"
+                android:editable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/hint_phone" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneNumberTV"
+                android:ems="10"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/btnAddNotice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@android:color/darker_gray"
+                android:text="@string/addNotice"
+                android:textColor="@android:color/background_light"></Button>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout><!-- From: file:/R:/Disertatie/proiect%20bun/Test/app/src/main/res/layout/add_product.xml -->
